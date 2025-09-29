@@ -68,3 +68,37 @@ function draw() {
     triangle(300, 90, 320, 110, 300, 130);
     triangle(340, 90, 320, 110, 340, 130);
 }
+
+window.addEventListener('DOMContentLoaded', () => {
+    let item_counter = 0;
+
+    const nextButton = document.getElementById('nextBtn');
+
+    function checkReveal() {
+        if (item_counter >= 3) {
+            nextButton.style.visibility = 'visible';
+        }
+    }
+
+    // attach handlers safely (only if the elements exist)
+    const backpack = document.getElementById('backpack');
+    backpack.addEventListener('click', () => {
+        alert('My first backpack!');
+        item_counter += 1;
+        checkReveal();
+    });
+
+    const supplies = document.getElementById('school-supplies');
+    supplies.addEventListener('click', () => {
+        alert('Do I even need these?');
+        item_counter += 1;
+        checkReveal();
+    });
+
+    const bus = document.getElementById('school-bus');
+    bus.addEventListener('click', () => {
+        alert('Why can\'t I ride the bus?');
+        item_counter += 1;
+        checkReveal();
+    });
+});

@@ -1,0 +1,34 @@
+.guess-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    max-width: 900px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+}
+
+.guess-card {
+    text-align: center;
+}
+
+.guess-img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    display: block;
+    margin: 0.5rem auto;
+}
+
+.prompt {
+    font-size: 1.1rem;
+    margin: 0.2rem 0;
+}
+
+.reveal-btn {
+    background: #ab9264;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}

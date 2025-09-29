@@ -26,6 +26,7 @@ button:hover {
     cursor: pointer;
     transition: background 0.15s, transform 0.08s;
     box-shadow: 0 6px 14px rgba(91, 73, 41, 0.12);
+    visibility: hidden;
 }
 
 #nextBtn:active {
