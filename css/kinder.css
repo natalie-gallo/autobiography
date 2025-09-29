@@ -1,0 +1,42 @@
+main {
+  display: grid;
+  grid-template-areas:
+    "top top top"
+    "left center right";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 1.2rem;
+  position: relative;
+}
+
+#backpack {
+  grid-area: left;
+  align-self: center;
+  justify-self: end;
+  max-width: 90px;
+}
+
+#school-supplies {
+  grid-area: top;
+  align-self: end;
+  justify-self: center;
+  max-width: 120px;
+}
+
+#school-bus {
+  grid-area: right;
+  align-self: center;
+  justify-self: start;
+  max-width: 90px;
+}
+
+#kinder-canvas {
+  grid-area: center;
+  min-width: 320px;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
