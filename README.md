@@ -6,11 +6,11 @@ Point and Click Game about my life
 
 - [x] index
 - [x] family
-- [x] birthday
+- [x] birthday -- maybe add confetti?
 - [x] kinder
 - [x] moving
 - [x] kpop_anime
 - [x] valedictorian
-- [ ] aries
+- [x] aries
 - [ ] hs_grad
 - [ ] present_day
